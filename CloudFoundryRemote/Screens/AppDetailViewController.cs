@@ -108,7 +108,7 @@ namespace CloudFoundryRemote
 			var summary = new Dictionary<string, string> ();
 
 //			summary.Add ("Guid", _app.Guid);
-			summary.Add ("URL", _app.Urls.First());
+			summary.Add ("URL", _app.Urls.FirstOrDefault());
 			summary.Add ("Memory", _app.Memory.ToString() + "M");
 			summary.Add ("Instances", _app.Instances.ToString());
 			summary.Add ("Disk Quota", _app.DiskQuota.ToString() + "M");
